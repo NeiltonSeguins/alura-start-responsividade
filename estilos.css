@@ -1,0 +1,43 @@
+:root {
+  /* Fontes */
+  --fonte-corpo: "Inter", sans-serif;
+  --fonte-titulos: "Bai Jamjuree", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--fonte-titulos);
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+body {
+  font-family: var(--fonte-corpo);
+  box-sizing: border-box;
+}
