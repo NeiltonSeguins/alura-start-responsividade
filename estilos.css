@@ -5,6 +5,8 @@
   --cor-texto: #6e859f;
   --cor-texto-branco: #ffffff;
   --cor-titulo: #284260;
+  --cor-titulo-vermelho: #f6543b;
+  --cor-titulo-verde: #61e061;
   --cor-destaque-roxo: #c75eeb;
   --cor-subtitulo-azul: #4ebfe9;
   --botao-gradiente: linear-gradient(90deg, #c75eeb, #f6543b);
@@ -21,6 +23,7 @@
   --gap-m: 24px;
   --gap-l: 32px;
   --gap-xl: 48px;
+  --gap-2xl: 64px;
 }
 
 h1,
@@ -174,14 +177,10 @@ body {
   }
 }
 
-.quem-somos__subtitulo {
+.subtitulo {
   position: relative;
   color: var(--cor-subtitulo-azul);
-
-  &::before {
-    content: "_quem somos";
-    font-weight: 600;
-  }
+  font-weight: 600;
 }
 
 .quem-somos__descricao {
@@ -189,5 +188,65 @@ body {
 
   & > strong {
     color: var(--cor-titulo);
+  }
+}
+
+.sobre-nos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2xl);
+  padding: var(--padding-2xl) 0;
+}
+
+.sobre-nos__conteudo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--gap-s);
+}
+
+.sobre-nos__titulo {
+  color: var(--cor-titulo);
+
+  & > span {
+    color: var(--cor-destaque-roxo);
+  }
+}
+
+.sobre-nos__beneficios {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-2xl);
+}
+
+.sobre-nos__beneficios--card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--gap-m);
+  width: 33.33%;
+
+  & > h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  & .sobre-nos__titulo-criatividade {
+    color: var(--cor-titulo-vermelho);
+  }
+
+  & .sobre-nos__titulo-acessibilidade {
+    color: var(--cor-subtitulo-azul);
+  }
+
+  & .sobre-nos__titulo-autonomia {
+    color: var(--cor-titulo-verde);
+  }
+
+  & > p {
+    color: var(--cor-texto);
+    font-size: 20px;
+    width: 100%;
   }
 }
