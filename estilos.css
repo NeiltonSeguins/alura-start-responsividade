@@ -3,9 +3,10 @@
   --fonte-corpo: "Inter", sans-serif;
   --fonte-titulos: "Bai Jamjuree", sans-serif;
   --cor-texto: #6e859f;
-  --cor-destaque-roxo: #c75eeb;
   --cor-texto-branco: #ffffff;
-  --cor-titulo-principal: #284260;
+  --cor-titulo: #284260;
+  --cor-destaque-roxo: #c75eeb;
+  --cor-subtitulo-azul: #4ebfe9;
   --botao-gradiente: linear-gradient(90deg, #c75eeb, #f6543b);
   --botao-gradiente-hover: linear-gradient(90deg, #560d6e, #560d6e);
 
@@ -28,30 +29,7 @@ h3,
 h4,
 h5 {
   font-family: var(--fonte-titulos);
-}
-
-h1 {
   font-size: 60px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 26px;
-  font-weight: 700;
-}
-
-h4 {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-h5 {
-  font-size: 16px;
   font-weight: 700;
 }
 
@@ -161,7 +139,7 @@ body {
 }
 
 .banner__titulo {
-  color: var(--cor-titulo-principal);
+  color: var(--cor-titulo);
   margin-bottom: 0;
 
   & > span {
@@ -172,4 +150,44 @@ body {
 .banner__descricao {
   color: var(--cor-texto);
   font-size: 20px;
+}
+
+.quem-somos {
+  padding: calc(var(--padding-2xl) + var(--padding-xl)) 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quem-somos__texto-principal {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: var(--gap-l);
+  width: 45%;
+}
+
+.quem-somos__titulo {
+  color: var(--cor-titulo);
+
+  & > span {
+    color: var(--cor-destaque-roxo);
+  }
+}
+
+.quem-somos__subtitulo {
+  position: relative;
+  color: var(--cor-subtitulo-azul);
+
+  &::before {
+    content: "_quem somos";
+    font-weight: 600;
+  }
+}
+
+.quem-somos__descricao {
+  color: var(--cor-texto);
+
+  & > strong {
+    color: var(--cor-titulo);
+  }
 }
