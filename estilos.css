@@ -439,7 +439,7 @@ body {
   border-radius: 10px;
   border: 1px solid var(--cor-subtitulo-azul);
   scroll-snap-align: start;
-  
+  scroll-padding-left: 20px;
 
   & > h3 {
     font-family: var(--fonte-corpo);
@@ -464,5 +464,52 @@ body {
     padding: var(--padding-2xs) var(--padding-xs);
     background-color: var(--cor-container-impacto);
     border-radius: 16px;
+  }
+}
+
+.projetos__detalhe-triangulo {
+  position: absolute;
+  right: 0;
+  top: 5%;
+}
+
+.projetos__detalhe-retangulo {
+  position: absolute;
+  left: 0;
+  top: 85%;
+}
+
+.rodape {
+  display: flex;
+  gap: var(--gap-xl);
+  padding: var(--padding-2xl) 0;
+}
+
+.rodape__informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--gap-m);
+
+  & > p {
+    line-height: 150%;
+  }
+}
+
+.rodape__links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--gap-s);
+
+  & > h4 {
+    color: var(--cor-texto);
+    font-size: 16px;
+  }
+
+  & > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 150%;
   }
 }
