@@ -10,6 +10,7 @@
   --cor-destaque-roxo: #c75eeb;
   --cor-subtitulo-azul: #4ebfe9;
   --cor-container-impacto: #f4f7ff;
+  --vantagens-background-gradiente: linear-gradient(180deg, #ffffff, #e7edf5);
   --botao-gradiente: linear-gradient(90deg, #c75eeb, #f6543b);
   --botao-gradiente-hover: linear-gradient(90deg, #560d6e, #560d6e);
 
@@ -340,3 +341,48 @@ body {
   right: 0;
   top: 65%;
 }
+
+.vantagens {
+  background-image: var(--vantagens-background-gradiente);
+
+  & > div[class="container"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(var(--padding-xl) + var(--padding-l));
+
+    & > a:hover {
+      transition: 0.2s ease-in;
+      background-color: var(--cor-destaque-roxo);
+      color: var(--cor-texto-branco);
+    }
+  }
+}
+
+.vantagens__conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.vantagens__textos {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 40%;
+  gap: var(--gap-m);
+
+  & > h2 {
+    color: var(--cor-titulo);
+
+    & > span {
+      color: var(--cor-titulo-verde);
+    }
+  }
+
+  & > p {
+    color: var(--cor-texto);
+    text-align: justify;
+  }
+}
+
