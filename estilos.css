@@ -9,6 +9,7 @@
   --cor-titulo-verde: #61e061;
   --cor-destaque-roxo: #c75eeb;
   --cor-subtitulo-azul: #4ebfe9;
+  --cor-container-impacto: #f4f7ff;
   --botao-gradiente: linear-gradient(90deg, #c75eeb, #f6543b);
   --botao-gradiente-hover: linear-gradient(90deg, #560d6e, #560d6e);
 
@@ -199,8 +200,6 @@ body {
 }
 
 .sobre-nos__conteudo {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   gap: var(--gap-s);
 }
@@ -249,4 +248,95 @@ body {
     font-size: 20px;
     width: 100%;
   }
+}
+
+.nosso-impacto {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  & > div[class="container"] {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-2xl);
+    padding: var(--padding-2xl) 0;
+  }
+}
+
+.nosso-impacto__conteudo {
+  text-align: center;
+  gap: var(--gap-s);
+}
+
+.nosso-impacto__titulo {
+  color: var(--cor-titulo);
+
+  & > span {
+    color: var(--cor-destaque-roxo);
+  }
+}
+
+.nosso-impacto__estatisticas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-l);
+
+  & > div > h3 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  & > div > p {
+    color: var(--cor-texto);
+  }
+}
+
+.nosso-impacto__estatistica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 200px;
+  text-align: center;
+  gap: var(--gap-s);
+  background-color: var(--cor-container-impacto);
+  border-radius: 10px;
+  padding: var(--padding-l) calc(var(--padding-m) + var(--padding-2xl));
+  border: 1px solid transparent;
+}
+
+.nosso-impacto__estatistica.impacto-estudantes {
+  & > h3 {
+    color: var(--cor-subtitulo-azul);
+  }
+
+  &:hover {
+    border: 1px solid var(--cor-subtitulo-azul);
+  }
+}
+
+.nosso-impacto__estatistica.impacto-professores {
+  & > h3 {
+    color: var(--cor-destaque-roxo);
+  }
+
+  &:hover {
+    border: 1px solid var(--cor-destaque-roxo);
+  }
+}
+
+.nosso-impacto__estatistica.impacto-escolas {
+  & > h3 {
+    color: var(--cor-titulo-verde);
+  }
+
+  &:hover {
+    border: 1px solid var(--cor-titulo-verde);
+  }
+}
+
+.nosso-impacto__detalhe {
+  position: absolute;
+  right: 0;
+  top: 65%;
 }
