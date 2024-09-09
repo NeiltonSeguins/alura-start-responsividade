@@ -384,7 +384,7 @@ body {
     }
   }
 
-  & > p {
+  & > p.vantagens__descricao {
     color: var(--cor-texto);
     text-align: justify;
   }
@@ -522,8 +522,14 @@ body {
 }
 
 .orcamento__link-email {
+  display: flex;
+  align-items: self-start;
   text-decoration: none;
   color: var(--cor-texto-branco);
+  &::before {
+    content: url("./assets/icones/email.svg");
+    margin-right: 8px;
+  }
 }
 
 .orcamento__formulario {
@@ -573,14 +579,12 @@ body {
   & > textarea {
     background-color: var(--cor-container-impacto);
     border: none;
+    border-radius: 4px;
     padding: var(--padding-2xs);
     &::placeholder {
       color: var(--cor-texto);
     }
   }
-}
-
-.orcamento__formulario--input {
 }
 
 .rodape {
