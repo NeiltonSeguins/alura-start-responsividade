@@ -31,13 +31,22 @@
     <header class="container">
       <div class="cabecalho">
         <a href="#">
-          <img src="./assets/logo-large.png" alt="Logo Alura Start" />
+          <img
+            src="./assets/logo-large.png"
+            srcset="
+              ./assets/logo-small.png   74w,
+              ./assets/logo-medium.png  74w,
+              ./assets/logo-large.png  139w
+            "
+            sizes="(max-width: 360px) 74px, (max-width: 768px) 74px, 139px"
+            alt="Logo Alura Start"
+          />
         </a>
         <div class="cabecalho__nav">
           <nav>
             <ul class="cabecalho__lista">
               <li class="cabecalho__item">
-                <a href="#">Quem somos</a>
+                <a href="#">Sobre</a>
               </li>
               <li class="cabecalho__item">
                 <a href="#">Soluções</a>

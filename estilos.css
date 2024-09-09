@@ -52,6 +52,10 @@ body {
 .container {
   width: 1192px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    width: 674px;
+  }
 }
 
 .cabecalho {
@@ -81,6 +85,10 @@ body {
   text-decoration: none;
   transition: 0.2s ease-in;
 
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
   &:hover {
     color: var(--cor-destaque-roxo);
   }
@@ -89,6 +97,16 @@ body {
 .cabecalho__botoes {
   display: flex;
   gap: var(--gap-s);
+
+  @media (max-width: 768px) {
+    & > a.btn__primario {
+      text-align: center;
+    }
+
+    & > a.btn__secundario {
+      display: none;
+    }
+  }
 }
 
 .cabecalho__botoes > a {
