@@ -92,7 +92,7 @@
           />
         </div>
         <div class="quem-somos__texto-principal">
-          <div class="subtitulo">_quem somos</div>
+          <p class="subtitulo">_quem somos</p>
           <h2 class="quem-somos__titulo">
             Pensamento computacional para estudantes da
             <span class="quem-somos__titulo-destaque">educação básica</span>
@@ -108,7 +108,7 @@
       </section>
       <section class="sobre-nos container">
         <div class="sobre-nos__conteudo">
-          <div class="subtitulo">_sobre nós</div>
+          <p class="subtitulo">_sobre nós</p>
           <h2 class="sobre-nos__titulo">
             Por que ensinamos através da
             <span class="sobre-nos__titulo-destaque">programação?</span>
@@ -150,7 +150,7 @@
       <section class="nosso-impacto">
         <div class="container">
           <div class="nosso-impacto__conteudo">
-            <div class="subtitulo">_sobre nós</div>
+            <p class="subtitulo">_sobre nós</p>
             <h2 class="nosso-impacto__titulo">
               Nosso impacto
               <br /><span>em números</span><br />
@@ -183,7 +183,7 @@
         <div class="container">
           <div class="vantagens__conteudo">
             <div class="vantagens__textos">
-              <div class="subtitulo">_metodologia</div>
+              <p class="subtitulo">_metodologia</p>
               <h2 class="vantagens__titulo">
                 Vantagens do uso da
                 <span class="vantagens__titulo-destaque">programação</span>
@@ -214,7 +214,7 @@
         />
         <div class="projetos__conteudo container">
           <div class="projetos__texto">
-            <div class="subtitulo">_nossos projetos</div>
+            <p class="subtitulo">_nossos projetos</p>
             <h2><span>Projetos</span> de estudantes <br />da Alura Start:</h2>
           </div>
         </div>
@@ -288,95 +288,114 @@
         />
       </section>
       <section class="orcamento">
-        <h1 class="orcamento__titulo">
-          Transforme sua escola com nossas soluções inovadoras
-        </h1>
-        <p class="orcamento__email">
-          <a href="mailto:atendimento.alurastart@alura.com.br">
-            atendimento.alurastart@alura.com.br
-          </a>
-        </p>
-        <h2 class="formulario__titulo">_solicite um orçamento personalizado</h2>
-        <form action="#" method="post" class="formulario">
-          <label for="nome" class="formulario__label">Nome *</label>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            class="formulario__input"
-            placeholder="Informe o seu nome"
-            required
-          />
+        <div class="container">
+          <div class="orcamento__textos">
+            <img src="./assets/logo-branco.png" alt="Logo alura start" />
+            <p class="subtitulo">_tenha a Alura Start na sua escola</p>
+            <h2 class="orcamento__titulo">
+              Transforme sua escola com nossas <span>soluções inovadoras</span>
+            </h2>
+            <a
+              class="orcamento__link-email"
+              href="mailto:atendimento.alurastart@alura.com.br"
+            >
+              atendimento.alurastart@alura.com.br
+            </a>
+          </div>
+          <form action="#" class="orcamento__formulario">
+            <h3>_solicite um orçamento personalizado</h3>
+            <fieldset class="orcamento__formulario--fieldset">
+              <label for="nome">Nome * </label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Informe o seu nome"
+                required
+              />
+            </fieldset>
 
-          <label for="email" class="formulario__label">E-mail *</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="formulario__input"
-            placeholder="Informe seu e-mail institucional"
-            required
-          />
+            <fieldset class="orcamento__formulario--fieldset">
+              <label for="email">E-mail * </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Informe seu e-mail institucional"
+                required
+              />
+            </fieldset>
 
-          <label for="escola" class="formulario__label">Escola *</label>
-          <input
-            type="text"
-            id="escola"
-            name="escola"
-            class="formulario__input"
-            placeholder="Informe o nome da Escola em que trabalha"
-            required
-          />
+            <fieldset class="orcamento__formulario--fieldset">
+              <label for="escola">Escola * </label>
+              <input
+                type="text"
+                id="escola"
+                name="escola"
+                placeholder="Informe o nome da Escola em que trabalha"
+                required
+              />
+            </fieldset>
 
-          <label for="cargo" class="formulario__label">Cargo *</label>
-          <select id="cargo" name="cargo" class="formulario__select" required>
-            <option value="" disabled selected>
-              Selecione o seu cargo nessa Escola
-            </option>
-            <option value="diretor">Diretor</option>
-            <option value="coordenador">Coordenador</option>
-            <option value="professor">Professor</option>
-          </select>
+            <fieldset class="orcamento__formulario--fieldset">
+              <label for="cargo">Cargo * </label>
+              <select
+                id="cargo"
+                name="cargo"
+                class="orcamento__formulario--select"
+                required
+              >
+                <option value="" disabled selected>
+                  Selecione o seu cargo nessa Escola
+                </option>
+                <option value="diretor">Diretor</option>
+                <option value="coordenador">Coordenador</option>
+                <option value="professor">Professor</option>
+              </select>
+            </fieldset>
 
-          <label for="telefone" class="formulario__label"
-            >Telefone com DDD *</label
-          >
-          <input
-            type="tel"
-            id="telefone"
-            name="telefone"
-            class="formulario__input"
-            placeholder="Informe seu telefone para contato"
-            required
-          />
+            <fieldset class="orcamento__formulario--fieldset">
+              <label for="telefone">Telefone com DDD * </label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="Informe seu telefone para contato"
+                required
+              />
+            </fieldset>
 
-          <label for="necessidades" class="formulario__label"
-            >Descreva as necessidades da sua escola *</label
-          >
-          <textarea
-            id="necessidades"
-            name="necessidades"
-            class="formulario__textarea"
-            placeholder="Conte-nos brevemente sobre a quantidade de alunos, interesses e as expectativas da sua escola"
-            required
-          ></textarea>
+            <fieldset class="orcamento__formulario--fieldset">
+              <label for="necessidades"
+                >Descreva as necessidades da sua escola *
+              </label>
+              <textarea
+                rows="5"
+                cols="33"
+                id="necessidades"
+                name="necessidades"
+                class="orcamento__formulario--textarea"
+                placeholder="Conte-nos brevemente sobre a quantidade de alunos, interesses e as expectativas da sua escola"
+                required
+              ></textarea>
+            </fieldset>
 
-          <label for="captcha" class="formulario__label"
-            >Quanto é 1 + 11? *</label
-          >
-          <input
-            type="text"
-            id="captcha"
-            name="captcha"
-            class="formulario__input"
-            placeholder="Informe a resposta"
-            required
-          />
+            <fieldset class="orcamento__formulario--fieldset">
+              <label for="captcha">Quanto é 1 + 11? * </label>
+              <input
+                type="text"
+                id="captcha"
+                name="captcha"
+                placeholder="Informe a resposta"
+                required
+              />
+            </fieldset>
 
-          <button type="submit" class="btn btn__primario">
-            SOLICITAR ORÇAMENTO
-          </button>
-        </form>
+            <button type="submit" class="btn btn__primario">
+              SOLICITAR ORÇAMENTO
+            </button>
+          </form>
+        </div>
       </section>
       <footer class="rodape container">
         <div class="rodape__informacoes">
