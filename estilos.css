@@ -40,6 +40,14 @@ h5 {
   font-family: var(--fonte-titulos);
   font-size: 60px;
   font-weight: 700;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+h1 {
+  font-size: 60px;
 }
 
 body {
@@ -86,7 +94,7 @@ body {
   transition: 0.2s ease-in;
 
   @media (max-width: 768px) {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 
   &:hover {
@@ -110,7 +118,7 @@ body {
 }
 
 .cabecalho__botoes > a {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .cabecalho__divisor {
@@ -127,7 +135,7 @@ body {
   padding: var(--padding-xs) var(--padding-l);
   border: none;
   border-radius: 200px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -188,7 +196,7 @@ body {
 
 .banner__descricao {
   color: var(--cor-texto);
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .quem-somos {
@@ -211,10 +219,6 @@ body {
 
 .quem-somos__titulo {
   color: var(--cor-titulo);
-
-  @media (max-width: 768px) {
-    font-size: 32px;
-  }
 
   & > span {
     color: var(--cor-destaque-roxo);
@@ -256,10 +260,14 @@ body {
 }
 
 .sobre-nos__beneficios {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--gap-2xl);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
 }
 
 .sobre-nos__beneficios--card {
@@ -267,10 +275,9 @@ body {
   flex-direction: column;
   align-items: start;
   gap: var(--gap-m);
-  width: 33.33%;
 
   & > h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     text-transform: uppercase;
   }
 
@@ -288,7 +295,7 @@ body {
 
   & > p {
     color: var(--cor-texto);
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 100%;
   }
 }
@@ -308,7 +315,9 @@ body {
 
 .nosso-impacto__conteudo {
   text-align: center;
-  gap: var(--gap-s);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-m);
 }
 
 .nosso-impacto__titulo {
@@ -320,10 +329,14 @@ body {
 }
 
 .nosso-impacto__estatisticas {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: var(--gap-l);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-l);
+  }
 
   & > div > h3 {
     font-size: 32px;
@@ -339,7 +352,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 1 200px;
   text-align: center;
   gap: var(--gap-s);
   background-color: var(--cor-container-impacto);
