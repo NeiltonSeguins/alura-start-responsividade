@@ -156,6 +156,12 @@ body {
   display: flex;
   justify-content: space-between;
   padding: calc(var(--padding-2xl) + var(--padding-m)) 0;
+
+  @media (max-width: 768px) {
+    & > .banner__imagem {
+      display: none;
+    }
+  }
 }
 
 .banner__texto-principal {
@@ -163,6 +169,12 @@ body {
   flex-direction: column;
   gap: var(--gap-xl);
   align-items: self-start;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+    padding: 0 calc(var(--padding-2xl) + var(--padding-m));
+  }
 }
 
 .banner__titulo {
@@ -183,6 +195,10 @@ body {
   padding: calc(var(--padding-2xl) + var(--padding-xl)) 0;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    padding: var(--padding-xl);
+  }
 }
 
 .quem-somos__texto-principal {
@@ -195,6 +211,10 @@ body {
 
 .quem-somos__titulo {
   color: var(--cor-titulo);
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
 
   & > span {
     color: var(--cor-destaque-roxo);
