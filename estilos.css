@@ -260,13 +260,14 @@ body {
 }
 
 .sobre-nos__beneficios {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: var(--gap-2xl);
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -275,6 +276,7 @@ body {
   flex-direction: column;
   align-items: start;
   gap: var(--gap-m);
+  width: 33.33%;
 
   & > h3 {
     font-size: 1.25rem;
@@ -329,13 +331,12 @@ body {
 }
 
 .nosso-impacto__estatisticas {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   gap: var(--gap-l);
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--gap-l);
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   & > div > h3 {
@@ -352,12 +353,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1 1 200px;
   text-align: center;
   gap: var(--gap-s);
   background-color: var(--cor-container-impacto);
   border-radius: 10px;
   padding: var(--padding-l) calc(var(--padding-m) + var(--padding-2xl));
   border: 1px solid transparent;
+
+  @media (max-width: 768px) {
+    flex: 1 1 50px;
+    max-width: 25%;
+  }
 }
 
 .nosso-impacto__estatistica.impacto-estudantes {
@@ -533,7 +540,7 @@ body {
 }
 
 .orcamento {
-  padding: calc(var(--padding-2xl) + var(--padding-l));
+  padding: calc(var(--padding-2xl) + var(--padding-l)) 0;
   background-image: url("./assets/imagens/orcamento-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -543,6 +550,11 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: calc(var(--gap-2xl) + var(--gap-2xl));
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: calc(var(--gap-m) + var(--gap-m));
+    }
   }
 }
 
@@ -551,6 +563,10 @@ body {
   flex-direction: column;
   align-items: start;
   gap: var(--gap-l);
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 
   & > img {
     padding-bottom: var(--padding-l);
@@ -565,6 +581,11 @@ body {
   color: var(--cor-texto-branco);
   font-weight: 600;
   padding-bottom: var(--padding-m);
+
+  @media (max-width: 768px) {
+    text-align: center;
+    width: 70%;
+  }
 
   & > span {
     color: var(--cor-destaque-rosa);
@@ -590,6 +611,10 @@ body {
   padding: var(--padding-m);
   border-radius: 10px;
   width: 80%;
+
+  @media (max-width: 768px) {
+    width: 60%;
+  }
 
   & > h3 {
     color: var(--cor-titulo-vermelho);
