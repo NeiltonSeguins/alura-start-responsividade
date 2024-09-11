@@ -30,42 +30,47 @@
   <body>
     <header class="container">
       <div class="cabecalho">
-        <a href="#">
-          <img
-            src="./assets/logo-large.png"
-            srcset="
-              ./assets/logo-small.png   74w,
-              ./assets/logo-medium.png  74w,
-              ./assets/logo-large.png  139w
-            "
-            sizes="(max-width: 360px) 74px, (max-width: 768px) 74px, 139px"
-            alt="Logo Alura Start"
-          />
-        </a>
-        <div class="cabecalho__nav">
-          <nav>
-            <ul class="cabecalho__lista">
-              <li class="cabecalho__item">
-                <a href="#">Sobre</a>
-              </li>
-              <li class="cabecalho__item">
-                <a href="#">Soluções</a>
-              </li>
-              <li class="cabecalho__item">
-                <a href="#">Metodologia</a>
-              </li>
-              <li class="cabecalho__item">
-                <a href="#">Benefícios</a>
-              </li>
-              <li class="cabecalho__item">
-                <a href="#">Projetos</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="cabecalho__botoes">
-            <a href="#" class="btn btn__primario">QUERO CONHECER</a>
-            <a href="#" class="btn btn__secundario">ENTRAR</a>
-          </div>
+        <nav class="cabecalho__nav">
+          <ul>
+            <li>
+              <a href="#" aria-label="Ir para a página inicial">
+                <img
+                  src="./assets/logo-large.png"
+                  srcset="
+                    ./assets/logo-small.png   74w,
+                    ./assets/logo-medium.png  74w,
+                    ./assets/logo-large.png  139w
+                  "
+                  sizes="(max-width: 360px) 74px, (max-width: 768px) 74px, 139px"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+          <ul class="cabecalho__lista">
+            <li class="cabecalho__item">
+              <a href="#">Sobre</a>
+            </li>
+            <li class="cabecalho__item">
+              <a href="#">Soluções</a>
+            </li>
+            <li class="cabecalho__item">
+              <a href="#">Metodologia</a>
+            </li>
+            <li class="cabecalho__item">
+              <a href="#">Benefícios</a>
+            </li>
+            <li class="cabecalho__item">
+              <a href="#">Projetos</a>
+            </li>
+            <li class="cabecalho__item">
+              <a href="#">Entrar</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="cabecalho__botoes">
+          <a href="#" class="btn btn__primario">QUERO CONHECER</a>
+          <a href="#" class="btn btn__secundario">ENTRAR</a>
         </div>
       </div>
       <div class="cabecalho__divisor" />
@@ -213,8 +218,8 @@
             <img
               src="./assets/imagens/vantagens-desktop.svg"
               srcset="
-                ./assets/imagens/vantagens-mobile.svg 321w,
-                ./assets/imagens/vantagens-tablet.svg 332w,
+                ./assets/imagens/vantagens-mobile.svg  321w,
+                ./assets/imagens/vantagens-tablet.svg  332w,
                 ./assets/imagens/vantagens-desktop.svg 594w
               "
               sizes="(max-width: 360px) 321px, (max-width: 768px) 332px, 594px"
