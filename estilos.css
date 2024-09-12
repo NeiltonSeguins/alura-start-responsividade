@@ -51,12 +51,10 @@ h5 {
   font-weight: 700;
 
   @media (max-width: 768px) {
-    font-size: var(--fonte-size-l);
+    &:not(h1) {
+      font-size: var(--fonte-size-l);
+    }
   }
-}
-
-h1 {
-  font-size: var(--fonte-size-xl);
 }
 
 body {
@@ -218,12 +216,12 @@ body {
 }
 
 .quem-somos {
-  padding: calc(var(--padding-2xl) + var(--padding-xl)) 0;
   display: flex;
   justify-content: space-between;
+  padding: 7rem 0;
 
   @media (max-width: 768px) {
-    padding: var(--padding-xl);
+    padding: var(--padding-xl) 0;
   }
 }
 
