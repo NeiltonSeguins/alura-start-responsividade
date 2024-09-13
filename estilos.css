@@ -282,7 +282,7 @@ body {
   justify-content: space-between;
   gap: var(--gap-2xl);
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px), (orientation: landscape) {
     flex-wrap: wrap;
     justify-content: space-around;
   }
