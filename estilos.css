@@ -363,7 +363,7 @@ body {
   text-align: center;
   background-color: var(--cor-container-impacto);
   border-radius: 10px;
-  padding: var(--padding-l) calc(var(--padding-m) + var(--padding-2xl));
+  padding: var(--padding-l) 5.5rem;
   border: 1px solid transparent;
 
   @media (max-width: 767px) {
@@ -415,7 +415,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: calc(var(--padding-xl) + var(--padding-l)) 0;
+    padding: 5rem 0;
 
     @media (max-width: 768px) {
       gap: var(--gap-xl);
@@ -465,7 +465,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: var(--gap-2xl);
-  padding: calc(var(--padding-xl) + var(--padding-xl)) 0;
+  padding: 6rem 0;
   position: relative;
 }
 
@@ -553,7 +553,7 @@ body {
 }
 
 .orcamento {
-  padding: calc(var(--padding-2xl) + var(--padding-l)) 0;
+  padding: 7rem 0;
   background-image: url("./assets/imagens/orcamento-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -562,11 +562,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: calc(var(--gap-2xl) + var(--gap-2xl));
+    gap: 8rem;
 
     @media (max-width: 768px) {
       flex-direction: column;
-      gap: calc(var(--gap-m) + var(--gap-m));
+      gap: 3rem;
     }
   }
 }
@@ -597,7 +597,6 @@ body {
 
   @media (max-width: 768px) {
     text-align: center;
-    width: 70%;
   }
 
   & > span {
@@ -623,11 +622,6 @@ body {
   gap: var(--gap-m);
   padding: var(--padding-m);
   border-radius: 10px;
-  width: 80%;
-
-  @media (max-width: 768px) {
-    width: 60%;
-  }
 
   & > h3 {
     color: var(--cor-titulo-vermelho);
