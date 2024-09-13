@@ -289,15 +289,12 @@ body {
 }
 
 .sobre-nos__beneficios--card {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: var(--gap-m);
   width: 33.33%;
 
   & > h3 {
     font-size: var(--fonte-size-m);
     text-transform: uppercase;
+    padding: var(--padding-m) 0;
   }
 
   & .sobre-nos__titulo-criatividade {
@@ -315,7 +312,6 @@ body {
   & > p {
     color: var(--cor-texto);
     font-size: var(--fonte-size-m);
-    width: 100%;
   }
 }
 
@@ -334,9 +330,6 @@ body {
 
 .nosso-impacto__conteudo {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-m);
 }
 
 .nosso-impacto__titulo {
@@ -349,16 +342,15 @@ body {
 
 .nosso-impacto__estatisticas {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: var(--gap-l);
-
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
 
   & > div > h3 {
     font-size: var(--fonte-size-l);
     font-weight: 700;
+    padding-bottom: var(--padding-xs);
   }
 
   & > div > p {
@@ -367,12 +359,8 @@ body {
 }
 
 .nosso-impacto__estatistica {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1 1 200px;
+  flex: 1 1 100px;
   text-align: center;
-  gap: var(--gap-s);
   background-color: var(--cor-container-impacto);
   border-radius: 10px;
   padding: var(--padding-l) calc(var(--padding-m) + var(--padding-2xl));
