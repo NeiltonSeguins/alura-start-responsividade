@@ -69,6 +69,10 @@ body {
   width: 1192px;
   margin: 0 auto;
 
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+
   /* width < 768px */
   @media (max-width: 768px) {
     width: 674px;
@@ -757,5 +761,16 @@ body {
     text-transform: uppercase;
     line-height: 150%;
     color: var(--cor-texto);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.3;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
   }
 }
